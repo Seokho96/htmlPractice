@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- form
+    resource 
+    textfield, button, textArea, Checkbox, radio button
+-->
+
+<!--  
+*****Attribute
+ .     목적 :  접근하기 위한 요소(element)
+    id    :  현재 페이지에서 1개만 적용된다. Java Script 
+    class :  다중으로 사용이 가능하다. CSS, Java Script
+    name  :  값을 전달(Server). 1개만 사용. Java Script
+-->
+
+<!-- <p id="aaa" class="ddd" name ="a1">hello</p>
+<p id="bbb" class="ddd" name ="b1">hello</p>
+<p id="ccc" class="ddd" name ="c1">hello</p> -->
+
+
+<a href="NewFile.jsp">NewFile로 이동</a>
+
+<form action="NewFile.jsp">
+ID:<input type="text" name ="id" value="" title="여기에  id기입">
+<br>
+Password:<input type="password" name= "pwd" value="">
+<br>
+<input type="submit" value="버튼">     <!-- 이벤트를 발생시키는 버튼 -->    
+<br>
+<input type="reset" value="초기화">
+
+
+</form>
+<br><br><br>
+<!-- HTML5 -->
+<form action="NewFile1.jsp">
+number:<input type="number" max="5" min="1" name = "number">
+<br>
+date:<input type="date" name = "date">
+<br>
+color:<input type="color" value="#ff0000" name = "color" >
+<br>
+range:<input type="range" max="10" min="0" name = "range">
+<br>
+search:<input type="search" name = "search">
+
+<input type="submit" value="여러가지" >
+</form>
+<br><br><br>
+
+Check Box & Radio Button<br>
+<form action="NewFile1.jsp">
+
+<input type="checkbox" name="hobby" value="패션">패션<br>
+<input type="checkbox" name="hobby" value="음악">음악<br>
+<input type="checkbox" name="hobby" value="게임">게임<br>
+<br>
+
+<input type="radio" name="car" value="벤츠" checked="checked">벤츠<br>
+<input type="radio"  name="car"value="아우디">아우디<br>
+<input type="radio"  name="car"value="BMW">BMW<br>
+
+<input type="submit" value="취미">
+
+</form>
+
+<br><br><br>
+Select == Choice == ComboBox
+<form action="NewFile3.jsp">
+<select name="fname" multiple="multiple">
+   <option value = "사과">Apple</option>
+   <option value = "오렌지"> Orange</option>
+   <option value = "멜론" selected="selected">Melon</option>
+   <option value = "레몬">Lemon</option> 
+</select>
+<input type="submit" value="과일">
+</form>
+<br><br>
+<textarea rows="10" cols="30">초기값</textarea>
+<br><br>
+
+<video width="400" controls="controls">
+ 
+   <source src="mov_bbb.mp4" type="video/mp4">
+   
+   <!-- <source src="mov_bbb.ogg" type="video/ogg"> ogg파일도 됨-->
+</video>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

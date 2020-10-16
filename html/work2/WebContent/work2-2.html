@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body background= "./images/1212.jpg">
+<div align="center">
+<form action="WorkFile2-2.jsp">
+
+<b><font size="10">설문조사</font></b>
+<br><br>
+이름:<input type="text" name="name">
+<br><br>
+【질문1】<br>
+영어로 대화할 수 있습니까?<br>
+&nbsp;&nbsp; <input type="radio" name="know" value="예">예 &nbsp;&nbsp;&nbsp;
+<input type="radio" name="know" value="모르겠습니다"> 모르겠습니다 &nbsp;&nbsp;&nbsp;
+<input type="radio" name="know" value="아니오"> 아니오
+
+<br><br>
+【질문2】<br>
+영어외에 관심있는 언어가 있으면 선택(복수 선택 가능)<br>
+&nbsp;&nbsp; <input type="checkbox" name="lang" value="독일어">독일어 &nbsp;&nbsp;&nbsp;
+<input type="checkbox" name="lang" value="중국어"> 중국어 &nbsp;&nbsp;&nbsp;
+<input type="checkbox" name="lang" value="프랑스어"> 프랑스어
+
+<br><br>
+【질문2】<br>
+영어 수업에 대한 의견이 있으시면 기입해 주십시오.<br>
+<textarea rows="5" cols="60" name="opinion"></textarea>
+
+<br><br>
+【질문2】<br>
+당신의 연령을 선택해 주십시오.<select name="age">
+<option value="10대">10대</option>
+<option value="20대">20대</option>
+<option value="30대">30대</option>
+<option value="40대">40대</option>
+<option value="50대">50대</option>
+</select>
+
+<br><br>
+<input type="submit" value="입력완료">
+</form>
+</div>
+</body>
+</html>
